@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dynamic EJS</title>
+</head>
+
+<body class="container">
+<h2><%= header%></h2>
+<table>
+<% teamInfo.forEach(function(member){%>
+<tr><td><%= member.name %></td><td><%= member.team %></td></tr>
+<% }); %>
+</table>
+    
+
+</body>
+
+</html>

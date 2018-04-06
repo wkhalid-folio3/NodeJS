@@ -1,0 +1,2 @@
+{"name":"master start","hostname":"wkhalid-pc","pid":11000,"level":50,"msg":"4 process spawned","time":"2018-04-06T12:16:50.893Z","v":0}
+{"name":"master receive","hostname":"wkhalid-pc","pid":11000,"level":50,"receivingmessage":{"message":{"param1":"waleed","param2":"waleed2"},"pid":9968},"msg":"message receiveid from worker 4","time":"2018-04-06T12:16:54.762Z","v":0}
