@@ -15,7 +15,8 @@ app.set('view engine', 'ejs');
 
 var server = app.listen(3000, function() {
     var log = logger.createLogger('server', 'start');
-    log.info('initiating server');
+    log.info({ loginfo: "initiating server" }, "working");
+    console.log('asdf', JSON.stringify(log));
     //console.log("weather app started at port 3000");
 });
 

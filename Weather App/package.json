@@ -9,10 +9,13 @@
         "nodemon": "1.17.2",
         "swig": "1.4.2",
         "request": "^2.85.0",
-        "bunyan": "^1.8.12"
+        "bunyan": "^1.8.12",
+        "winston": "^2.4.1"
     },
     "scripts": {
-        "start1": "node server.js | bunyan",
-        "start2": "node clusterServer.js | bunyan"
+        "start_bunyan": "node server.js | bunyan",
+        "start_cluster": "node clusterServer.js | bunyan",
+        "start_winston": "node winstonServer",
+        "test": "node server.js"
     }
 }
