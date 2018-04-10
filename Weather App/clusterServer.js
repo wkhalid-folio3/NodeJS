@@ -45,7 +45,7 @@ if (cluster.isMaster) {
     });
 
     //make server with workers
-    var server = app.listen(3003, function() {
+    var server = app.listen(3006, function() {
         var log = logger.createLogger('server', 'start');
         log.info('initiating server at worker: ' + process.pid);
         //console.log("weather app started at port 3000");
