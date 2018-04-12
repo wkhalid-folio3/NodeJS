@@ -1,2 +1,0 @@
-{"name":"worker send","hostname":"wkhalid-pc","pid":9968,"level":50,"operation":"msg to master","postData":"{\"param1\":\"waleed\",\"param2\":\"waleed2\"}","msg":"sending to master","time":"2018-04-06T12:16:54.757Z","v":0}
-{"name":"worker receive","hostname":"wkhalid-pc","pid":9968,"level":50,"operation":"msg frm master","msg":"","time":"2018-04-06T12:16:54.765Z","v":0}

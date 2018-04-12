@@ -3,19 +3,22 @@
     "version": "",
     "dependencies": {
         "body-parser": "1.18.2",
+        "bunyan": "^1.8.12",
+        "chokidar": "2.0.3",
         "consolidate": "0.15.1",
         "ejs": "2.5.8",
         "express": "4.16.3",
         "nodemon": "1.17.2",
-        "swig": "1.4.2",
+        "pino-2": "^4.6.0",
         "request": "^2.85.0",
-        "bunyan": "^1.8.12",
+        "swig": "1.4.2",
         "winston": "^2.4.1"
     },
     "scripts": {
         "start_bunyan": "node server.js | bunyan",
         "start_cluster": "node clusterServer.js | bunyan",
         "start_winston": "node winstonServer",
-        "test": "node server.js"
+        "test": "node server.js",
+        "start_pino": "node pinoServer.js | pino --errorProps"
     }
 }

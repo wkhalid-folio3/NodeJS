@@ -1,0 +1,16 @@
+{
+    "name": "kue-demo-office",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "kue": "^0.11.6",
+        "kue-ui-express": "^1.0.2",
+        "mysql": "^2.15.0"
+    },
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,30 @@
+{
+    "name": "bunyan-logger-base",
+    "version": "1.0.0",
+    "description": "base architecture implementation for bunyan logger",
+    "author": {
+        "name": "Walid Bin Khalid",
+        "email": "wkhalid@folio3.com"
+    },
+    "dependencies": {
+        "body-parser": "1.18.2",
+        "bunyan": "^1.8.12",
+        "ejs": "2.5.8",
+        "express": "4.16.3",
+        "json-cycle": "1.3.0",
+        "nodemon": "1.17.2"
+    },
+    "config": {
+        "port": "3001",
+        "isRotating": true,
+        "backupCount": 2,
+        "rotatePeriod": "ms",
+        "rotateFrequency": "60000",
+        "logFolderPath": "./log/",
+        "logFileName": "logs"
+    },
+    "scripts": {
+        "start": "node server.js | bunyan",
+        "start_cluster": "node cluster_server.js | bunyan"
+    }
+}
