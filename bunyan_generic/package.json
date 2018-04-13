@@ -15,13 +15,7 @@
         "nodemon": "1.17.2"
     },
     "config": {
-        "port": "3001",
-        "isRotating": true,
-        "backupCount": 2,
-        "rotatePeriod": "ms",
-        "rotateFrequency": "60000",
-        "logFolderPath": "./log/",
-        "logFileName": "logs"
+        "port": "3001"
     },
     "scripts": {
         "start": "node server.js | bunyan",

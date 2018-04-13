@@ -43,9 +43,9 @@ class Log {
 
 
 module.exports = {
-    Log: new Log(process.env.npm_package_config_logFolderPath + process.env.npm_package_config_logFileName + ".log",
-        process.env.npm_package_config_isRotating,
-        process.env.npm_package_config_backupCount,
-        process.env.npm_package_config_rotatePeriod,
-        process.env.npm_package_config_rotateFrequency)
+    Log: new Log(configs.log.logFolderPath + configs.log.logFileName + ".log",
+        configs.log.isRotating,
+        configs.log.backupCount,
+        configs.log.rotatePeriod,
+        configs.log.rotateFrequency)
 };

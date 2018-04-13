@@ -1,13 +1,8 @@
 "use strict";
-
-const express = require('express');
-const bodyParser = require('body-parser');
-const logger = require('./logger').Log;
-const app = express();
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
+global.configs = require('./libs/configs');
+const libs = require('./libs');
+const logger = libs.Log;
+const app = libs.express;
 
 /*
 Currently unneccesary
@@ -23,8 +18,9 @@ app.get('/', (req, res) => {
 app.post('/post', (req, res) => {
     logger.info({ operation: "post", logDetails: req.body }, 'data posted');
 });
-app.listen(process.env.npm_package_config_port, () => {
-    logger.info({ operation: 'initiate', logDetails: process.env }, 'Server started');
+app.listen(configs.server.port, () => {
+    //console.log(JSON.stringify(configs));
+    logger.info({ operation: 'initiate', logDetails: configs }, 'Server started');
     //logger.debug({ operation: 'initiate', logDetails: process.env }, 'Server started2');
     //logger.error({ operation: 'initiate', logDetails: { a: 1, b: 2, c: 3 } }, 'Server started2');
 });
